@@ -1,0 +1,30 @@
+###
+GET http://localhost:3000/api/empleados
+
+###
+POST http://localhost:3000/api/empleados
+Content-Type: application/json
+
+{
+    "nombre":"David Menesese",
+    "cargo":"Contador",
+    "departamento":"Finanzas",
+    "sueldo": "3000"
+}
+
+###
+GET http://localhost:3000/api/empleados/6512503a4337c5678b90ae3b
+
+###
+PUT http://localhost:3000/api/empleados/6512503a4337c5678b90ae3b
+Content-Type: application/json
+
+{
+    "nombre":"David Meneses2",
+    "cargo":"Contador2",
+    "departamento":"Finanzas2",
+    "sueldo": "1100"
+}
+
+###
+DELETE http://localhost:3000/api/empleados/65124fbb4337c5678b90ae34
